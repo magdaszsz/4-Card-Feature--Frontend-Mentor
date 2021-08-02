@@ -47,6 +47,12 @@ header {
   width: min(24rem, 100%);
   padding: 2rem 1rem;
   margin-top: 2rem;
+  transition: all .4s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: hsl(240, 1%, 54%) 0px 8px 24px;
 }
 
 .team {
