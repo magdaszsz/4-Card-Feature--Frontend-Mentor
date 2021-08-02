@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 2rem 1rem 4rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.header-title {
+  color: hsl(234, 12%, 34%);
+  text-align: center;
+}
+
+.header-span {
+  display: block;
+  font-weight: 200;
+}
+
+.header-text {
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  width: min(1300px, 95%);
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.card {
+  box-shadow: hsl(240, 7%, 86%) 0px 8px 24px;
+  border-radius: 5px;
+  display: grid;
+  width: min(24rem, 100%);
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.team {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card-title {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.3rem;
+}
+
+.card-text {
+  max-width: 17rem;
+  color: hsl(229, 6%, 66%);
+}
+
+.card-image {
+  justify-self: end;
+  margin-top: 3rem;
+}
+
+.card-image img {
+  height: 4rem;
+}
+
+@media (min-width: 700px) {
+  .cards {
+    margin: 0 auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template: 1fr 1fr/1fr 1fr;
+    grid-template-areas: 'supervisor team'
+                          'karma calculator';
+  }
+
+  .card {
+    margin-top: 0;
+  }
+
+  .supervisor {
+    grid-area: supervisor;
+  }
+
+  .team {
+    grid-area: team;
+  }
+
+  .karma {
+    grid-area: karma;
+  }
+
+  .calculator {
+    grid-area: calculator;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cards {
+    max-width: 1300px;
+   
+    grid-template: repeat(4, 1fr)/repeat(3,1fr);
+    grid-template-areas: '. team .'
+                        'supervisor team calculator'
+                        'supervisor karma calculator'
+                        '. karma .';
+  }
+}
+
+
