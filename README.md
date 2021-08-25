@@ -1,6 +1,6 @@
 # Frontend Mentor - Four card feature section
 
-https://magdaszsz.github.io/Frontend-Mentor-4-Card-Feature/
+https://magdaszsz.github.io/4-Card-Feature--Frontend-Mentor/
 
 A quick little project using CSS Grid. Fully responsive.
 
